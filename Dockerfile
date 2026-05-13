@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY . .
 
-RUN go install -v github.com/prometheus/promu@latest \
+RUN go install -v github.com/prometheus/promu@v0.17.0 \
     && promu build -v --prefix build
 
 
